@@ -75,47 +75,82 @@ import java.util.Scanner;
 // Написать метод, принимающий на вход два целых числа и проверяющий,
 //  * что их сумма лежит в пределах от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
 
-public class program {
-    public static void main(String[] args) {
-        System.out.print("\033[H\033[2J");
-        Scanner iScanner = new Scanner(System.in);
-        System.out.println("name: ");
-        String name = iScanner.nextLine();
-        System.out.printf("Hello, %s!\n", name);
-        iScanner.close();
-    }
-}
-
-    // private static void main() {
-    //     // проверить, что сумма a и b лежит между 10 и 20
-    //     Scanner iScanner = new Scanner(System.in);
-    //     System.out.println("name: ");
-    //     String name = iScanner.nextLine();
-    //     System.out.printf("Hello, %s!", name);
-    //     iScanner.close();
-    // }
-    // private static void call(){
-    // main();
-    // }
-    // call();
+// public class program {
+//     public static void main(String[] args) {
+//         System.out.print("\033[H\033[2J");
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.println("int a: ");
+//         int a = iScanner.nextInt();
+//         System.out.println("int b: ");
+//         int b = iScanner.nextInt();
+//         iScanner.close();   
+//         System.out.println(sumBetween10And20 (a, b));
+//     }
+//     private static boolean sumBetween10And20(int a, int b) {
+//         if (10 <= a+b && a+b <= 20) {
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//     }
 // }
+
+//Написать метод, проверяющий что х положитеьное
+
+// public class program {
+//     public static void main(String[] args) {
+//         System.out.print("\033[H\033[2J");
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.println("int x: ");
+//         int x = iScanner.nextInt();
+//         iScanner.close();   
+//         System.out.println(isPositive(x));
+//     }
+//     private static boolean isPositive(int x){
+//         if (x >= 0) {
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//     }
+// }
+
+// Написать метод, печатающий строку source repeat раз
 
 // public class program{
-    //     private static boolean sumBetween10And20(int a, int b) {
-    //         // проверить, что сумма a и b лежит между 10 и 20
-    //         int a = in.nextInt();
-    //         return false;
-    //     }
-    // }
-
-// private static boolean isPositive(int x) {
-//     // проверить, что х положительное
-//     return false;
+//     public static void main(String[] args){
+//         System.out.print("\033[H\033[2J");
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.println("repat: ");
+//         int x = iScanner.nextInt();
+//         iScanner.close();
+//         int count = 0;
+//         while (count != x){
+//             printString();
+//             count++;
+//         }
+//     }
+//     public static void printString(){
+//         System.out.println("source");
+//     }
 // }
 
-// private static void printString(String source, int repeat) {
-//     // напечатать строку source repeat раз
-// }
+// Написать метод, проверяющий, является ли год высокосным
+
+public class program{
+    public static void main(String[] args){
+        // int[][] calendar = new int[5][5] {
+        //     2000	2020	2040	2060	2080
+        //     2004	2024	2044	2064	2084
+        //     2008	2028	2048	2068	2088
+        //     2012	2032	2052	2072	2092
+        //     2016	2036	2056	2076	2096
+        // };
+        // System.out.printf(calendar)
+    }
+}
 
 // private static boolean isLeapYear(int year) {
 //     // проверить, является ли год високосным. если да - return true
