@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Calendar;
 
 // public class program {
     //     public static void main(String[] args) {
@@ -74,7 +74,7 @@ import java.util.Scanner;
 
 // Написать метод, принимающий на вход два целых числа и проверяющий,
 //  * что их сумма лежит в пределах от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
-
+// import java.util.Scanner;
 // public class program {
 //     public static void main(String[] args) {
 //         System.out.print("\033[H\033[2J");
@@ -97,7 +97,7 @@ import java.util.Scanner;
 // }
 
 //Написать метод, проверяющий что х положитеьное
-
+// import java.util.Scanner;
 // public class program {
 //     public static void main(String[] args) {
 //         System.out.print("\033[H\033[2J");
@@ -118,7 +118,7 @@ import java.util.Scanner;
 // }
 
 // Написать метод, печатающий строку source repeat раз
-
+// import java.util.Scanner;
 // public class program{
 //     public static void main(String[] args){
 //         System.out.print("\033[H\033[2J");
@@ -141,14 +141,24 @@ import java.util.Scanner;
 
 public class program{
     public static void main(String[] args){
-        // int[][] calendar = new int[5][5] {
-        //     2000	2020	2040	2060	2080
-        //     2004	2024	2044	2064	2084
-        //     2008	2028	2048	2068	2088
-        //     2012	2032	2052	2072	2092
-        //     2016	2036	2056	2076	2096
-        // };
-        // System.out.printf(calendar)
+        main_data(null);
+    }
+    
+    public static void main_data(int[][] array){
+        int[][] data_array = {
+            {2000,	2020,	2040,	2060,	2080},
+            {2004,	2024,	2044,	2064,	2084},
+            {2008,	2028,	2048,	2068,	2088},
+            {2012,	2032,	2052,	2072,	2092},
+            {2016,	2036,	2056,	2076,	2096} 
+        };
+        System.out.println("Высокосные года XXI века: ");
+        for (int i = 0; i < data_array.length; i++){
+            for (int j = 0; j < data_array.length; j++){
+                System.out.print(data_array[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
 
