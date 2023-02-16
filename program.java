@@ -137,12 +137,16 @@
 
 // Написать метод, проверяющий, является ли год высокосным
 
+import java.util.Scanner;
 public class program{
     public static void main(String[] args){
-        main_data(null);
+        boolean z = isLeapYear();
+        System.out.println(isLeapYear(0));
     }
+
+    // гуглить как вызвать boolean
     
-    public static void main_data(int[][] array){
+    public static boolean isLeapYear(int year){
         int[][] data_array = {
             {2000,	2020,	2040,	2060,	2080},
             {2004,	2024,	2044,	2064,	2084},
@@ -150,12 +154,20 @@ public class program{
             {2012,	2032,	2052,	2072,	2092},
             {2016,	2036,	2056,	2076,	2096} 
         };
-        System.out.println("Высокосные года XXI века: ");
+        Scanner iScanner = new Scanner(System.in);
+        System.out.println("Введите x: ");
+        int x = iScanner.nextInt();
+        iScanner.close();
         for (int i = 0; i < data_array.length; i++){
-            for (int j = 0; j < data_array.length; j++){
-                System.out.print(data_array[i][j] + "\t");
+            for (int j = 0; j < data_array[i].length; j++){
+                if (i == x || j == x){
+                    return true;
+                }
+                else{
+                    return false;
+                }
             }
-            System.out.println();
+                
         }
     }
 }
