@@ -137,40 +137,57 @@
 
 // Написать метод, проверяющий, является ли год высокосным
 
-import java.util.Scanner;
-public class program{
-    public static void main(String[] args){
-        boolean z = isLeapYear();
-        System.out.println(isLeapYear(0));
-    }
-
+// import java.util.Scanner;
+// public class program{
+//     public static void main(String[] args){
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.println("Введите год: ");
+//         int year = iScanner.nextInt();
+//         iScanner.close();
+//         System.out.println(isLeapYear(year));
+//     }
+//     public static boolean isLeapYear(int year){
+//         int[][] data_array = {
+//             {2000,	2020,	2040,	2060,	2080},
+//             {2004,	2024,	2044,	2064,	2084},
+//             {2008,	2028,	2048,	2068,	2088},
+//             {2012,	2032,	2052,	2072,	2092},
+//             {2016,	2036,	2056,	2076,	2096} 
+//         };
+//         for (int i = 0; i < data_array.length; i++){
+//             for (int j = 0; j < data_array[i].length; j++){
+//                 if (i == year && j == year){
+//                     return true;
+//                 }
+//                 else{
+//                     return false;
+//                 }
+//             }    
+//         }
+//     }
+// }
     // гуглить как вызвать boolean
     
-    public static boolean isLeapYear(int year){
-        int[][] data_array = {
-            {2000,	2020,	2040,	2060,	2080},
-            {2004,	2024,	2044,	2064,	2084},
-            {2008,	2028,	2048,	2068,	2088},
-            {2012,	2032,	2052,	2072,	2092},
-            {2016,	2036,	2056,	2076,	2096} 
-        };
-        Scanner iScanner = new Scanner(System.in);
-        System.out.println("Введите x: ");
-        int x = iScanner.nextInt();
-        iScanner.close();
-        for (int i = 0; i < data_array.length; i++){
-            for (int j = 0; j < data_array[i].length; j++){
-                if (i == x || j == x){
-                    return true;
-                }
-                else{
-                    return false;
-                }
-            }
-                
-        }
-    }
-}
+//     public static boolean isLeapYear(int year){
+//         int[][] data_array = {
+//             {2000,	2020,	2040,	2060,	2080},
+//             {2004,	2024,	2044,	2064,	2084},
+//             {2008,	2028,	2048,	2068,	2088},
+//             {2012,	2032,	2052,	2072,	2092},
+//             {2016,	2036,	2056,	2076,	2096} 
+//         };
+//         for (int i = 0; i < data_array.length; i++){
+//             for (int j = 0; j < data_array[i].length; j++){
+//                 if (year == i || year == j){
+//                     return true;
+//                 }
+//                 else{
+//                     return false;
+//                 }
+//             }    
+//         }
+//     }
+// }
 
 // private static boolean isLeapYear(int year) {
 //     // проверить, является ли год високосным. если да - return true
@@ -199,3 +216,46 @@ public class program{
 //  * 4. Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
 //  */
 // }
+
+
+/**
+ * Заполнить список любыми строкам в произвольном порядке с повторениями.
+ * Вывести название каждой планеты и количество его повторений в списке.
+ */
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class program {
+    public static void main(String[] args) {
+        String a = "aaa";
+        String b = "bbb";
+        String x = "xxx";
+        String z = "zzz";
+        String v = "vvv";
+        String q = "qqq";
+        ArrayList<String> list = new ArrayList<>();
+        list.add(a);
+        list.add(a);
+        list.add(b);
+        list.add(x);
+        list.add(x);
+        list.add(z);
+        list.add(v);
+        list.add(q);
+        list.add(q);
+        list.add(q);
+        list.add(q);
+
+        int count = 0;
+        String first = list.get(0);
+        for (int i = 1; i < list.size(); i++){
+            if (first.equals(list.get(i))){
+                count++;
+            }
+        }
+        System.out.println(list);
+
+    }
+}
+
